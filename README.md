@@ -1,1 +1,1 @@
-# loja-de-cal-ados
+# loja-de-calçados
