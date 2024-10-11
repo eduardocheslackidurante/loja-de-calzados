@@ -7,26 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Loja de Tênis Criativos. Encontre os melhores tênis com estilo. Todos os direitos reservados.">
     <title>Loja - Tênis Criativos</title>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul class='nav-bar'>
-                <li class='logo'><h1>LOGO</h1></li>
-                <input type="text" id="pesquisa" name="pesquisa" placeholder="Pesquise produtos..." aria-label="Pesquisar produtos" required>
-                <input type='checkbox' id='check'>
-                <span class="menu">
-                    <li><a href="#sobre">sobre</a></li>
-                    <li><a href="#cadastro">cadastro</a></li>
-                    <li><a href="#produtos">Produtos</a></li>
-                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-                </span>
-                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-            </ul>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <input type="text" id="pesquisa" name="pesquisa" placeholder="Pesquise produtos..." aria-label="Pesquisar produtos" required>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="imagens/menu_white_36dp.svg" alt=""></button>
+            </div>
         </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -35,13 +50,6 @@
                 <h1>Bem-vindo à loja</h1>
                 <p>Encontre os melhores tênis com seu próprio estilo.</p>
                 <a href="#produtos" class="btn">Nossos Produtos</a>
-            </div>
-        </section>
-
-        <section id="sobre">
-            <div>
-                <h2>Sobre Nós</h2>
-                <p>Somos uma loja especializada em oferecer uma grande variedade de tênis para nossos clientes.</p>
             </div>
         </section>
 
@@ -82,22 +90,82 @@
                     <span class="price">R$???</span>
                     <a href="#" class="btn">Comprar</a>
                 </div>
-
-                <!-- Adicione mais produtos conforme necessário -->
             </div>
         </section>
-    </main>
-
-    <footer>
-        <div>
-            <p>&copy; <span id="current-year"></span> Loja de Tênis Criativos. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
-    <script>
-        // Atualiza o ano atual no rodapé
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
+    </main>     
+               <footer>
+                <div id="footer_content">
+                    <div id="footer_contacts">
+                        <h1>Logo</h1>
+                        <p>Pensado por você, feito por nós.</p>
+        
+                        <div id="footer_social_media">
+                            <a href="#" class="footer-link" id="instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+        
+                            <a href="#" class="footer-link" id="facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+        
+                            <a href="#" class="footer-link" id="whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <ul class="footer-list">
+                        <li>
+                            <h3>Blog</h3>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Tech</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Adventures</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Music</a>
+                        </li>
+                    </ul>
+        
+                    <ul class="footer-list">
+                        <li>
+                            <h3>Products</h3>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">App</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Desktop</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Cloud</a>
+                        </li>
+                    </ul>
+        
+                    <div id="footer_subscribe">
+                        <h3>Subscribe</h3>
+        
+                        <p>
+                            Digite seu e-mail para ser notificado sobre
+                            nossas novidades e descontos.
+                        </p>
+        
+                        <div id="input_group">
+                            <input type="email" id="email">
+                            <button>
+                                <i class="fa-regular fa-envelope"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="footer_copyright">
+                    &#169
+                    2024 Sempre a sua desposição.
+                </div>
+            </footer>
 </body>
 
 </html>
