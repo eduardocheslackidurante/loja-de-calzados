@@ -365,10 +365,10 @@ footer {
 #pesquisa {
    justify-content: center;
    padding: 5px;
-   border: 1px solid #ccc;
+   border: none;;
    border-radius: 5px;
    background-color: #f2f2f2;
-   text-decoration: none;
+   outline: none;
 }
 
 @media only screen and (max-width: 400px) {
