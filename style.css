@@ -204,7 +204,7 @@ footer {
 .card {
    margin: 20px;
    border-radius: 15px;
-   background-color: #d3d3d3;
+   background-color: #ffffff8a;
    justify-content: center;
    align-items: center;
    width: 300px;
@@ -213,7 +213,7 @@ footer {
    flex-direction: column;
    gap: 15px;
    color: #000;
-   transition: 1s;
+   transition: 0.3s;
    text-align: center;
    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -223,6 +223,10 @@ footer {
    flex-direction: column;
    gap: 15px;
    height: 400px;
+}
+.card:hover{
+   background-color: #e4e1df;
+   transition: 0.5s;
 }
 
 .card img {
@@ -348,10 +352,11 @@ footer {
    border: none;
    border-radius: 5px;
    text-decoration: none;
+   transition: 0.3s;
 }
 
 .btn:hover {
-   background-color: #333;
+   background-color: #1c6e07;
 }
 
 #pesquisa {
