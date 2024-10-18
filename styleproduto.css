@@ -57,10 +57,10 @@
  }
  
  #footer_content {
-    background-color: #171717;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 3rem 3.5rem;
+   background-color: #3c3c3c;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   padding: 3rem 3.5rem;
  }
  
  #footer_contacts h1 {
