@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Loja de Tênis Criativos. Encontre os melhores tênis com estilo. Todos os direitos reservados.">
+    <title>Produto</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styleproduto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+    <header>
+        
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="imagens/Logo.png"class="altlogo" alt="LOGO">
+            </div>
+
+    
+    </header>
+
+    <main>
+        
+        <div class="produto-detalhes">
+            <div class="produto-imagem">
+                <img src="imagens/tenis8.png" alt="Imagem do Produto">
+            </div>
+            <div class="produto-descricao">
+                <h2>Tênis Aesthetic Grafite 3.0</h2>
+                <p><strong>Descrição:</strong> Este tênis esportivo é ideal para corredores e entusiastas de atividades ao ar livre. Com design ergonômico e material respirável, ele oferece conforto e durabilidade, mesmo em treinos intensos.</p>
+                <ul class="produto-caracteristicas">
+                    <li><strong>Material:</strong> Malha respirável e sola de borracha.</li>
+                    <li><strong>Cor:</strong> Preto com detalhes em laranja.</li>
+                    <li><strong>Tamanhos disponíveis:</strong> 38, 39, 40, 41, 42, 43.</li>
+                    <li><strong>Indicação:</strong> Corrida, caminhadas e academia.</li>
+                </ul>
+                <p><strong>Especificações técnicas:</strong></p>
+                <ul class="produto-especificacoes">
+                    <li><strong>Peso:</strong> 250g.</li>
+                    <li><strong>Altura da sola:</strong> 3cm.</li>
+                    <li><strong>Amortecimento:</strong> Gel integrado na sola.</li>
+                    <li><strong>Resistência à água:</strong> Sim.</li>
+                </ul>
+                <p class="produto-preco"><strong>Preço:</strong> R$299,90</p>
+                <button class="produto-comprar-btn" id="comprar_agora">Comprar agora</button>
+                <button class="produto-comprar-btn" id="personalizar-btn">Personalizar</button>
+            </div>
+        </div>
+<!-- Modal Personalizar -->
+<div id="personalizar-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Personalize seu produto</h2>
+        <label for="custom-text">Texto personalizado:</label>
+        <textarea class="inptper" id="custom-text" placeholder="Digite como quer seu tenis..." rows="10"></textarea>
+        <button id="confirm-custom">Confirmar</button>
+    </div>
+    <script src="produto.js"></script>
+</div>
+
+    </main>     
+               <footer>
+                <div id="footer_content">
+                    <div id="footer_contacts">
+                        <h1>Logo</h1>
+                        <p>Pensado por você, feito por nós.</p>
+        
+                        <div id="footer_social_media">
+                            <a href="#" class="footer-link" id="instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+        
+                            <a href="#" class="footer-link" id="facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+        
+                            <a href="#" class="footer-link" id="whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <ul class="footer-list">
+                        <li>
+                            <h3>Biografia</h3>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">algo</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">sobre</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">vocês</a>
+                        </li>
+                    </ul>
+        
+                    <ul class="footer-list">
+                        <li>
+                            <h3>Bijuterias</h3>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">coisas</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">da</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">empresa</a>
+                        </li>
+                    </ul>
+        
+                    <div id="footer_subscribe">
+                        <h3>Informações</h3>
+        
+                        <p>
+                            Digite seu e-mail para ser notificado sobre
+                            nossas novidades e descontos.
+                        </p>
+        
+                        <div id="input_group">
+                            <input type="email" id="email">
+                            <button>
+                                <i class="fa-regular fa-envelope"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="footer_copyright">
+                    &copy; 2024 Sempre a sua disposição.
+                </div>
+            </footer>
+</body>
+
+</html>
