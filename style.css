@@ -417,3 +417,9 @@ nav li a{
    display: block;
    background-color: black;
 }
+
+.lupas{
+   margin-left: 1%;
+   filter: invert(100%);
+   
+}
