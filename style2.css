@@ -7,7 +7,6 @@ body {
     background-image: url(../imagens/muro.jpg);
     background-size: cover;
     background-position: left center;
-    height: 100vh;
 }
 .container {
     width: 80%;
