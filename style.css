@@ -28,7 +28,7 @@ body {
 
 header {
    grid-area: cabe;
-   background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+   background: #40371E;
    box-shadow: 0px 3px 10px #464646;
 }
 header .logo {
@@ -179,6 +179,14 @@ footer {
 
 #produtos{
    text-align: center;  
+}
+
+#basquetebol{
+   text-align: center;
+}
+
+#mais{
+   text-align: center;
 }
 
 #banner {
@@ -365,6 +373,7 @@ footer {
    border-radius: 5px;
    background-color: #f2f2f2;
    outline: none;
+   height: 20px;
 }
 
 @media only screen and (max-width: 400px) {
@@ -418,8 +427,7 @@ nav li a{
    background-color: black;
 }
 
-.lupas{
-   margin-left: 1%;
-   filter: invert(100%);
-   
+html,
+body{
+   scroll-behavior: smooth;
 }

@@ -1,9 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(255, 119, 0); /* branco */
     color: #000000; /* preto */
     margin: 0;
     padding: 0;
+    background-color: white;
+    background-image: url(../imagens/muro.jpg);
+    background-size: cover;
+    background-position: left center;
+    height: 100vh;
 }
 .container {
     width: 80%;
@@ -25,7 +29,7 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 input[type="date"] {
-    width: 100%;
+    width: 578px;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #000000; /* preto */
