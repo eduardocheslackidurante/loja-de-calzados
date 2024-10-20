@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo ao Nosso Site</title>
+    <link rel="stylesheet" href="stylesobre.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img class="Logo" src="imagens/Logo.png" alt="logo">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <input type="text" id="pesquisa" class="search-txt" name="pesquisa" placeholder="Pesquise produtos..." aria-label="Pesquisar produtos" required>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Produtos</a></li>
+                    <li class="nav-item"><a href="cadastro.html" class="nav-link">Cadastro</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                        <li class="dropdown">
+                            <a href="">Classes
+                                <div class="dropdown-menu">
+                                    <a href="#basquetebol">Basquetebol</a>
+                                    <a href="">Futebol</a>
+                                    <a href="#produtos">Voleibol</a>
+                                    <a href="#mais">Customizados</a>
+                                </div>
+                            </a>
+                        </li>   
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="imagens/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Produto</a></li>
+                <li class="nav-item"><a href="cadastro.html" class="nav-link">Cadastro</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <nav>
+                    <ul>
+                        <li class="dropdown">
+                            <a href="">Classes</a>
+                            <div class="dropdown-menu">
+                                <a href="">Basquetebol</a>
+                                <a href="">Futebol</a>
+                                <a href="">Voleibol</a>
+                                <a href="">Customizados</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </ul>
+        </div>
+    </header>
+    <Main>
+        <h1>Mais sobre a SportFitCustom</h1>
+        <section id="sobre">
+            <h2>Sobre nós</h2>
+            <p>Nossa loja de tênis esportivos é especializada em oferecer calçados de alta performance voltados para a prática de esportes e atividades físicas. Nosso estabelecimentos focam em proporcionar aos clientes uma ampla variedade de modelos, marcas e tecnologias que atendam às necessidades específicas de cada tipo de esporte, como corrida, futebol, basquete, tênis e outros.</p>
+        </section>
+        <section id="sobre">
+            <h2>Nossa missão</h2>
+            <p>A missão da nossa loja de tênis esportivos é garantir que os consumidores encontrem o calçado ideal para melhorar seu desempenho, conforto e segurança durante a prática esportiva. Além dos tênis, é comum que essas lojas também ofereçam acessórios e produtos relacionados ao bem-estar esportivo. Normalmente, a nossa equipe de atendimento é treinada para ajudar os clientes a escolherem o modelo certo com base no tipo de pisada, terreno e atividade que será praticada.</p>
+        </section>
+        <h1>Mais sobre a SmartGeeks</h1>
+        <section id="sobre">
+            <h2>Sobre nós</h2>
+            <p>A SmartGeeks é uma empresa inovadora especializada na criação de sites que se destaca pela sua abordagem personalizada e criativa. Nossa missão é transformar ideias em experiências digitais únicas, combinando design atraente com funcionalidade de ponta. Com uma equipe de especialistas apaixonados por tecnologia e estética, oferecemos soluções que atendem às necessidades específicas de cada cliente, garantindo uma presença online marcante. Na SmartGeeks, não apenas construímos sites; criamos conexões e impulsionamos negócios para o futuro digital. Venha nos conhecer e descubra como podemos levar sua marca a um novo patamar!</p>
+        </section>
+        <section id="sobre">
+            <h2>Nossa missão</h2>
+            <p>Na SmartGeeks, nossa missão é capacitar empresas e empreendedores a se destacarem no mundo digital através de soluções de web design inovadoras e eficazes. Acreditamos que cada negócio tem uma história única, e nosso objetivo é contar essa história de maneira impactante e acessível. Trabalhamos com dedicação para oferecer sites que não apenas impressionam visualmente, mas que também proporcionam uma experiência de usuário excepcional. Comprometidos com a qualidade e a inovação, buscamos continuamente as melhores práticas e tendências do mercado, assegurando que nossos clientes estejam sempre à frente. Na SmartGeeks, sua visão é nossa prioridade, e juntos, podemos transformar o potencial digital em resultados concretos.</p>
+        </section>
+    </Main>
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <img class="Logo" src="imagens/Logo.png" alt="logo">
+                <p>Pensado por você, feito por nós.</p>
+
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/sportfitcustom?igsh=Z3NqMG13enRiNndn&utm_source=qr" target="_blank" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img class="logo2" src="imagens/SmartGeeks.png" alt="logo2">
+                <p>SMART GEEKS solution</p>
+            </div>
+            <div id="footer_subscribe">
+                <h3>Informações</h3>
+
+                <p>
+                    Digite seu e-mail para ser notificado sobre
+                    nossas novidades e descontos.
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &copy; 2024 Sempre a sua desposição.
+        </div>
+    </footer>
+</body>
+</html>
