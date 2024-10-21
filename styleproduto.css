@@ -464,3 +464,7 @@ button:hover {
     color: #aaa; /* Cor do texto do placeholder */
     font-style: italic; /* Estilo itálico */
 }
+.logo2{
+   width: 400px;
+      border-radius: 50px;
+}
