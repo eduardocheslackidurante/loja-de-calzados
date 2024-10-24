@@ -207,6 +207,22 @@ footer {
    margin-bottom: 30px;
 }
 
+/* .card {
+   margin: 20px;
+   border-radius: 15px;
+   background-color: #ffffff8a;
+   justify-content: center;
+   align-items: center;
+   width: 300px;
+   height: 400px;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   color: #000;
+   transition: 0.3s;
+   text-align: center;
+   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+} */
 .card {
    margin: 20px;
    border-radius: 15px;
@@ -222,7 +238,9 @@ footer {
    transition: 0.3s;
    text-align: center;
    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+   position: relative; /* Define posição relativa para usar elementos filhos com posição absoluta */
 }
+
 
 .card div {
    display: flex;
@@ -236,8 +254,8 @@ footer {
 }
 
 .card img {
-   max-width: 200px;
-   max-height: 200px;
+   max-width: 150px;
+   max-height: 150px;
    border-radius: 5px;
 }
 
@@ -349,6 +367,19 @@ footer {
        display: block;
    }
 }
+.card .btn {
+   position: absolute; 
+   bottom: 15px; 
+   left: 50%; 
+   transform: translateX(-50%); 
+   background-color: #555;
+   color: #fff;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   text-decoration: none;
+   transition: 0.3s;
+}
 
 .btn {
    display: inline-block;
@@ -359,6 +390,8 @@ footer {
    border-radius: 5px;
    text-decoration: none;
    transition: 0.3s;
+   
+   
 }
 
 .btn:hover {
@@ -435,3 +468,4 @@ body{
    width: 400px;
    border-radius: 50px;
 }
+
