@@ -15,7 +15,7 @@ header {
     background: #40371E;
     color: white;
     text-align: center;
-    padding: 60px 20px;
+    
 }
 
 header h1 {
@@ -476,4 +476,9 @@ Main{
 .logo2{
    width: 400px;
    border-radius: 50px;
+}
+.apimaps{
+   width: 400px;
+   height: 300px;
+   border-radius: 20px;
 }

@@ -472,3 +472,8 @@ button:hover {
    width: 400px;
       border-radius: 50px;
 }
+.apimaps{
+   width: 400px;
+   height: 300px;
+   border-radius: 20px;
+}
