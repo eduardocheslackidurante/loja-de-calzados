@@ -254,6 +254,7 @@ footer {
 .card:hover{
    background-color: #ffffffc0;
    transition: 0.5s;
+   top: -5px;
 }
 
 .card img {
