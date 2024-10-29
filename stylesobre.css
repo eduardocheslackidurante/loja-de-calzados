@@ -38,7 +38,7 @@ section {
 
 Main{
     text-align: center;
-    background-color: #e0e0e0;
+    background-color: #383838a2
 }
 * {
     margin: 0;
@@ -161,6 +161,7 @@ Main{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    padding-right: 30px;
  }
  
  #footer_subscribe p {

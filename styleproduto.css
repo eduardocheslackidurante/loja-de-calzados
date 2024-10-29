@@ -41,7 +41,7 @@
     align-items: center;
     min-height: 100vh;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #383838a2;
  }
  
  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
@@ -124,6 +124,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    padding-right: 30px;
  }
  
  #footer_subscribe p {
@@ -316,7 +317,7 @@
  }
  /* CSS DO PRODUTO EM SI */
  .produto-detalhes {
-    background-color: #fff;
+    background-color: #191919d9;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -324,6 +325,7 @@
     width: 100%;
     box-sizing: border-box;
     text-align: left;
+    color: white;
 }
 
 .produto-imagem img {
@@ -336,12 +338,12 @@
 .produto-descricao h2 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: #333;
+    color: white;
 }
 
 .produto-descricao p {
     margin-bottom: 10px;
-    color: #555;
+    color: white;
 }
 
 .produto-caracteristicas,
