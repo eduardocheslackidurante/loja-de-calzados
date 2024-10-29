@@ -5,32 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro SportFitCustom</title>
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
-    <div class="container">
-        <img class="imagem" src="imagens/Logo.png" alt="SubLogo">
-        <h1>Cadastre-se</h1>
-        <form action="#" method="post">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            <label for="sobrenome">Sobrenome:</label>
-            <input type="text" id="sobrenome" name="sobrenome" required>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" required>
-            <label for="confirmar_senha">Confirmar Senha:</label>
-            <input type="password" id="confirmar_senha" name="confirmar_senha" required>
-            <label for="data_nascimento">Data de Nascimento:</label>
-            <input type="date" id="data_nascimento" name="data_nascimento" required>
-            <label for="genero">Gênero:</label>
-            <p><select id="genero" name="genero" required>
-                <option value="masculino">Masculino</option>
-                <option value="feminino">Feminino</option>
-            </select></p>
-            <input onclick="window.location.href='index.html'" type="submit" value="Enviar">
-        </form>
-    </div>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="imagens/Logo.png"class="altlogo" alt="LOGO">
+            </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Cadastre-se</h1>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="sobrenome" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+                <label for="confirmar_senha">Confirmar Senha:</label>
+                <input type="password" id="confirmar_senha" name="confirmar_senha" required>
+                <label for="data_nascimento">Data de Nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento" required>
+                <label for="genero">Gênero:</label>
+                <p><select id="genero" name="genero" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select></p>
+                <input onclick="window.location.href='index.html'" type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <img class="Logo" src="imagens/Logo.png" alt="logo">
+                <p>Pensado por você, feito por nós.</p>
+
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/sportfitcustom?igsh=Z3NqMG13enRiNndn&utm_source=qr" target="_blank" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div id="footer_subscribe">
+                <h3>Informações</h3>
+
+                <p>
+                    Digite seu e-mail para ser notificado sobre
+                    nossas novidades e descontos.
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="apipmap">
+                <h3>Bairro Centro, Rua Santos Dumont, 257</h3>
+                <iframe class="apimaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.3741769871694!2d-49.52070792460963!3d-25.459178277543167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dd19d23ac946db%3A0x2ceb2af6e3e04ff9!2sR.%20Santos%20Dumont%2C%20257%20-%20Vila%20Bancaria%2C%20Campo%20Largo%20-%20PR%2C%2083601-090!5e0!3m2!1spt-BR!2sbr!4v1730124156771!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <div>
+                <img class="logo2" src="imagens/SmartGeeks.png" alt="logo2">
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &copy; 2024 Sempre a sua desposição.
+        </div>
+    </footer>
 </body>
 </html>

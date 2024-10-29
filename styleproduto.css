@@ -21,7 +21,7 @@
  
  header {
     grid-area: cabe;
-    background: #40371E;
+    background: #ffae00;
     box-shadow: 0px 3px 10px #464646;
  }
  
@@ -57,7 +57,7 @@
  }
  
  #footer_content {
-   background-color: #3c3c3c;
+   background-color: rgb(53, 53, 53);
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    padding: 3rem 3.5rem;
@@ -366,8 +366,8 @@
 
 .produto-comprar-btn {
     display: inline-block;
-    background-color: #ff4500;
-    color: #fff;
+    background-color: #ffae00;
+    color: black;
     padding: 10px 20px;
     text-align: center;
     border-radius: 15px;
@@ -380,8 +380,9 @@
    text-decoration: none;
 }
 .produto-comprar-btn:hover {
-    background-color: #ff2200;
+    background-color: #be8200;
     transition: 0.3s ease;
+    color: white;
 }
 /* POPUP PERSONALIZAÇAO */
 
@@ -395,11 +396,12 @@
     height: 100%; /* Altura total */
     overflow: auto; /* Habilita o scroll se necessário */
     background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro com transparência */
+    color: #ffffff;
 }
 
 /* Conteúdo do modal */
 .modal-content {
-    background-color: #fff;
+    background-color: #1a1a1a;
     margin: 15% auto; /* Centraliza o modal */
     padding: 20px;
     border-radius: 8px; /* Cantos arredondados */
@@ -409,7 +411,7 @@
 }
 
 h2 {
-    color: #333; /* Cor do título */
+    color: #ffffff; /* Cor do título */
 }
 
 label {
