@@ -439,18 +439,20 @@ nav li a{
 
 .dropdown-menu{
    position: absolute;
-   box-shadow: 0 0 2px black;
+   box-shadow: 0 0 2px rgb(0, 0, 0);
    display: none;
 }
 
 .dropdown-menu a{
    display: block;
-   color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+   
 }
 
 .dropdown:hover .dropdown-menu{
    display: block;
-   background-color: black;
+   background-color: #ffae00;
+   box-shadow: #000;
 }
 
 html,
