@@ -17,31 +17,28 @@
     background-color: #e0e0e0;
     color: #333;
  }
-
+ 
+ .caixa_mae {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 20px;
+ }
  
  header {
     grid-area: cabe;
     background: #ffae00;
     box-shadow: 0px 3px 10px #464646;
  }
- 
- 
  header .logo {
     width: 150px;
- }
- .altlogo{
-    width: 200px;
-   border-radius: 20px;
  }
  
  main {
     grid-area: prin;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 60vh;
-    padding: 20px;
-    background-color: #383838a2;
+    color: white;
+    background-color: #676767;
  }
  
  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
@@ -57,10 +54,10 @@
  }
  
  #footer_content {
-   background-color: rgb(53, 53, 53);
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   padding: 3rem 3.5rem;
+    background-color: rgb(53, 53, 53);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
  }
  
  #footer_contacts h1 {
@@ -182,7 +179,106 @@
         padding: 3rem 2rem;
     }
  }
-
+ 
+ #produtos{
+    text-align: center;  
+ }
+ 
+ #basquetebol{
+    text-align: center;
+ }
+ #futebol{
+    text-align: center;
+ }
+ #meias{
+    text-align: center;
+ }
+ 
+ #mais{
+    text-align: center;
+ }
+ 
+ #banner {
+    background-image: url('imagens/banner.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+ }
+ 
+ #banner h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+ }
+ 
+ #banner p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+ }
+ 
+ /* .card {
+    margin: 20px;
+    border-radius: 15px;
+    background-color: #ffffff8a;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #000;
+    transition: 0.3s;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+ } */
+ .card {
+    margin: 20px;
+    border-radius: 15px;
+    background-color: #d2d2d2bc;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #000;
+    transition: 0.3s;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative; /* Define posição relativa para usar elementos filhos com posição absoluta */
+ }
+ 
+ 
+ .card div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 400px;
+ }
+ .card:hover{
+    background-color: #ffffffc0;
+    transition: 0.5s;
+    top: -5px;
+ }
+ 
+ .card img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 5px;
+ }
+ 
+ .card .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+ }
+ 
+ .card h3 {
+    margin: 10px 0;
+ }
+ 
  .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -216,7 +312,7 @@
  .nav-link {
     text-decoration: none;
     font-size: 1.15rem;
-    color: #fff;
+    color: black;
     font-weight: 400;
  }
  
@@ -281,6 +377,19 @@
         display: block;
     }
  }
+ .card .btn {
+    position: absolute; 
+    bottom: 15px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+ }
  
  .btn {
     display: inline-block;
@@ -291,21 +400,14 @@
     border-radius: 5px;
     text-decoration: none;
     transition: 0.3s;
+    
+    
  }
  
  .btn:hover {
-    background-color: #1c6e07;
+    background-color: #ffae00;
+    color: #000;
  }
- 
- #pesquisa {
-    justify-content: center;
-    padding: 5px;
-    border: none;;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    outline: none;
- }
- 
  @media only screen and (max-width: 400px) {
     body {
         grid-template-areas: 
@@ -315,210 +417,95 @@
         grid-template-columns: 1fr;
     }
  }
- /* CSS DO PRODUTO EM SI */
- .produto-detalhes {
-   position: relative;
-   height: 100vh;
-   width: 100%;
-   color: #ffffff;
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   align-items: center;
-   gap: 2rem;
-}
-
-.produto-imagem {
-   flex: 1;
-   max-width: 50%;
-   display: flex;
-   justify-content: center; /* Centraliza a imagem horizontalmente */
-}
-
-.produto-imagem img {
-   max-width: 100%;
-   width: 28rem;
-   height: auto;
-   margin-left: 25%;
-}
-
-.produto-descricao {
-   flex: 2;
-}
-
-@media screen and (max-width: 768px) {
-   .produto-detalhes {
-       flex-direction: column; /* No mobile, imagem e descrição ficam empilhadas */
-       align-items: flex-start;
-   }
-}
-
-.produto-descricao h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: white;
-}
-
-.produto-descricao p {
-    margin-bottom: 10px;
-    color: white;
-}
-
-.produto-caracteristicas,
-.produto-especificacoes {
-    margin-bottom: 15px;
-}
-
-.produto-caracteristicas li,
-.produto-especificacoes li {
-    list-style: none;
-    margin-bottom: 5px;
-}
-
-.produto-preco {
-    font-size: 20px;
-    font-weight: bold;
-    color: #ff4500;
-    margin-bottom: 20px;
-}
-
-.produto-comprar-btn {
-    display: inline-block;
-    background-color: #ffae00;
-    color: black;
-    padding: 10px 20px;
-    text-align: center;
-    border-radius: 15px;
-    border: none;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-.produto-comprar-btn:hover {
-    background-color: #be8200;
-    transition: 0.3s ease;
-    color: white;
-}
-/* POPUP PERSONALIZAÇAO */
-
-.modal {
-    display: none; /* Escondido por padrão */
-    z-index: 1; /* Fica em cima de outros elementos */
-    left: 0;
-    top: 0;
-    overflow: auto; /* Habilita o scroll se necessário */
-    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro com transparência */
-    color: #ffffff;
-    position: absolute; /* Centralizar o modal relativo ao card */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centraliza o modal no card */
-    z-index: 1;
-    width: 100%; /* Ajuste para que o modal ocupe a largura do card */
-    max-width: 400px; /* Defina uma largura máxima para modais maiores */
-    padding: 20px;
-    border-radius: 8px;
-    color: #ffffff;
-}
-
-/* Conteúdo do modal */
-.modal-content {
-    background-color: #1a1a1a;
-    margin: 15% auto; /* Centraliza o modal */
-    padding: 20px;
-    border-radius: 8px; /* Cantos arredondados */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    max-width: 90%; /* Largura máxima responsiva */
-    width: 100%;
+ .Logo{
+    width: 200px;
+    border-radius: 20px;
+ }
+ *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-
-h2 {
-   color: #ffffff; /* Cor do título */
-}
-
-label {
+ }
+ 
+ nav{
+    background-color: linear-gradient(#7f37c9, #ff2992, #ff9807);
+ }
+ 
+ nav li{
+    display: inline-block;
+ }
+ 
+ nav li a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+ }
+ 
+ 
+ .dropdown-menu{
+    position: absolute;
+    box-shadow: 0 0 2px rgb(0, 0, 0);
+    display: none;
+ }
+ 
+ .dropdown-menu a{
     display: block;
-    margin-bottom: 10px; /* Espaçamento abaixo do rótulo */
-    font-weight: bold; /* Negrito */
-}
-/* Outros elementos do modal */
-label, textarea {
-   width: 100%;
-   margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    
+ }
+ 
+ .dropdown:hover .dropdown-menu{
+    display: block;
+    background-color: #ffae00;
+    box-shadow: #000;
+ }
+ 
+ html,
+ body{
+    scroll-behavior: smooth;
+ }
+ .logo2{
+    width: 400px;
+    border-radius: 50px;
+ }
+ 
+ .apimaps{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+ }
+
+ #carrinho {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
-input[type="text"] {
-    width: calc(100% - 20px); /* Largura total menos padding */
-    padding: 10px; /* Padding interno */
-    border: 1px solid #ccc; /* Borda leve */
-    border-radius: 4px; /* Cantos arredondados */
-    margin-bottom: 20px; /* Espaçamento abaixo do campo */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-button {
-    background-color: #ff4500; /* Cor do botão */
-    color: #fff; /* Cor do texto */
-    padding: 10px 15px; /* Padding interno */
-    border: none; /* Sem borda */
-    border-radius: 4px; /* Cantos arredondados */
-    cursor: pointer; /* Cursor de mão */
-    transition: background-color 0.3s; /* Transição suave */
-}
-
-button:hover {
-    background-color: #ff2200; /* Cor do botão ao passar o mouse */
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
+#total {
+    font-size: 1.2em;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
+#cart-items button {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
     cursor: pointer;
 }
-.inptper {
-    width: calc(100% - 20px); /* Largura total menos padding */
-    padding: 10px; /* Padding interno */
-    border: 1px solid #ccc; /* Borda leve */
-    border-radius: 4px; /* Cantos arredondados */
-    resize: none; /* Desabilita o redimensionamento manual */
-    height: 200px; /* Altura fixa do textarea */
-    font-family: Arial, sans-serif; /* Fonte */
-    font-size: 16px; /* Tamanho da fonte */
-    color: #333; /* Cor do texto */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+
+#cart-items button:hover {
+    background-color: #c9302c;
 }
 
-.inptper::placeholder {
-    color: #aaa; /* Cor do texto do placeholder */
-    font-style: italic; /* Estilo itálico */
-}
-.logo2{
-   width: 400px;
-      border-radius: 50px;
-}
-.apimaps{
-   width: 400px;
-   height: 300px;
-   border-radius: 20px;
-}
-.Logo {
-   width: 200px;
-   border-radius: 20px;
-
-}
-
-/* personalizaçao */
-/* Ajustes para dispositivos móveis */
-@media (max-width: 600px) {
-   .modal-content {
-       padding: 15px;
-       font-size: 14px;
-   }
-}
