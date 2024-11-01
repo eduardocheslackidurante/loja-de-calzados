@@ -201,7 +201,7 @@ footer {
 #banner {
    background-image: url('imagens/banner.jpg');
    background-size: cover;
-   color: white;
+   color: #ffae00;
    text-align: center;
    padding: 100px 0;
 }
