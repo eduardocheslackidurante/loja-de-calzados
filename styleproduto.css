@@ -314,6 +314,29 @@
             "roda";
         grid-template-columns: 1fr;
     }
+    main{
+      grid-area: prin;
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      min-height: 180vh;
+      padding: 20px;
+      background-color: #383838a2;
+    }
+    .produto-detalhes{
+      height: 150vh;
+      position: relative;
+      bottom: 100px;
+      right: 55%;
+    }
+    .produto-imagem{
+      position: relative;
+      width: 28rem;
+      height: 100px;
+      margin-left: 50%;
+      left: 180px;
+      bottom: 135px;
+    }
  }
  /* CSS DO PRODUTO EM SI */
  .produto-detalhes {
